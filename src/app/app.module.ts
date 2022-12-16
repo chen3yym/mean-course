@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { HttpClientModule} from "@angular/common/http";
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,14 +17,16 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { postListComponent } from './posts/post-list/post-list.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostsService } from './posts/posts.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    postListComponent
+    PostListComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,8 @@ import { postListComponent } from './posts/post-list/post-list.component';
     MatButtonModule,
     MatToolbarModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
