@@ -28,6 +28,7 @@ export class PostListComponent implements OnInit, OnDestroy{
       this.isLoading = false;
       this.posts = posts;
     });
+
   }
 
   ngOnDestroy(){
