@@ -64,11 +64,19 @@ router.get("", (req, res, next) =>{
     }
     postQuery
     .then(documents =>{
-        res.status(200).json({
+        // res.status(200).json({
+        //     message: 'Post fetched sucessfully!',
+        //     posts: documents
+        // });
+        fetchedPosts = documents;
+      return Post.count();
+      }).then(count =>{
+       res.status(200).json({
             message: 'Post fetched sucessfully!',
-            posts: documents
-        });
-    });
+            posts: fetchedPosts,
+            maxPosts: count
+       });
+      });
 });
 
 router.put("/:id", multer({storage: storage}).single("image"), (req, res, next) => {
