@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostsService } from './posts/posts.service';
 import { MatProgressSpinnerModule } from"@angular/material/progress-spinner";
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatProgressSpinnerModule } from"@angular/material/progress-spinner";
     PostCreateComponent,
     HeaderComponent,
     PostListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
