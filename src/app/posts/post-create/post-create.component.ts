@@ -4,7 +4,7 @@ import { flush } from "@angular/core/testing";
 import { FormControl, FormGroup, NgForm, Validators } from "@angular/forms";
 import { ActivatedRoute, ParamMap } from "@angular/router";
 import { __asyncValues } from "tslib";
-import { Post } from '../../posts/post.model';
+import { Post } from "../post.model";
 import { PostsService } from "../posts.service";
 import { mimeType } from "./mime-type.validator";
 
