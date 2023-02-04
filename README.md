@@ -1,4 +1,14 @@
-# MeanCourse
+# posting website with user authentication function
+
+# Deploied link with AWS
+* [Link](http://mean-job-posting-min.s3-website-us-east-1.amazonaws.com)
+# Toolkits used in this project
+- Frontend framework: Angular, Node.js
+- Tech Stack: RESTful API
+- Bundle tool: npm
+- Components: Composition
+- Deploy: AWS Beanstalk + AWS S3 bucket
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
